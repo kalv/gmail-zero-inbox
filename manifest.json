@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Gmail Inbox Zero",
+  "description": "When your gmail inbox is zero this will present a nice picture to make you feel good",
+  "version": "0.1",
+  "content_scripts": [ {
+    "js": [ "data/shared/libs/jquery-1.10.2.min.js", "data/embeds/gmail-zero-inbox.js" ],
+    "matches": [ "https://mail.google.com/*/*" ]
+  }],
+  "permissions": [
+    "https://mail.google.com/*/*"
+  ]
+}
